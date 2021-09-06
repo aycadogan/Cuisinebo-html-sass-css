@@ -1,4 +1,64 @@
-// Header
+// navbar, section, footer
 
+header{
+    background: url(../images/bg.jpeg) no-repeat center center/cover;
+    height: $height-header;
+    position: relative;
+    height: 100vh;
 
+    .brand{
+        display: flex;
+        justify-content: space-center;
+        align-items: center;
+        padding-top: $padding-header-top;
+        padding-left: $padding-header-left;
+
+        .brand-column{
+            display: flex;
+            flex-direction: column;
+            padding-left: 1rem;
+        }
+
+        .hamburger .fas{
+           padding-left: 15.75rem;
+           position: fixed;
+           margin-top: -3rem;
+        }
+    }
+
+    .header-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about-us{
+    background-color: $color-secondary;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
+
+    .about-us-left{
+        margin-left: -10rem;
+        padding-top: 3rem;
+        margin-right: 3rem;
+    }
+
+    .about-us-right{
+        margin-left: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.gallery{
+    .cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
 
