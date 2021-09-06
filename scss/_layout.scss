@@ -5,6 +5,8 @@ header{
     height: $height-header;
     position: relative;
     height: 100vh;
+    background-color: black;
+    
 
     .brand{
         display: flex;
@@ -58,7 +60,56 @@ header{
     .cards-wrapper{
         display: flex;
         flex-wrap: wrap;
+    }
+    .card{
+        width: calc(100% / 3);
+        height: 30vw;
+        overflow: hidden;
+        position: relative;
+        background-color: black;
         
+
+        &:hover .card-overlay{
+            left:0;
+        }
+        .card-overlay{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top:0;
+            left:-100%;
+            z-index: 10;
+            background-color: $color-yellow-opacity;
+            transition: 0.7s;
+        }
     }
 }
 
+.footer{
+    background-color: $color-secondary;
+    position: relative;
+
+    .footer-header{
+        display: flex;
+        justify-content: space-center;
+        align-items: center;
+        padding-top: $padding-header-top;
+        padding-left: $padding-header-left;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-copyright-paragraph{
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+}

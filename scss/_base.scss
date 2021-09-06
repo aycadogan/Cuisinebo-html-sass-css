@@ -18,6 +18,7 @@ $text-align-center: center;
 $padding-header-top:3rem;
 $padding-header-left: 22rem;
 $color-yellow: #d3ab55;
+$color-yellow-opacity: rgba(211, 171, 85,0.5);
 $font-family-dance: "Dancing Script", cursive;
 $margin-bottom-welcome: 40px;
 $font-size-80: 80px;
@@ -112,4 +113,48 @@ $font-style-italic: italic;
     margin-top: 2rem;
     margin-right: 3rem;
     margin-bottom: 2rem;
+}
+
+@mixin card-overlay-heading(){
+    font-family: $font-family-brand;
+    font-size: $font-brand;
+    font-weight: $font-weight-brand;
+    letter-spacing: $letter-spacing-brand;
+    text-transform: capitalize;
+    color: white;
+}
+
+@mixin card-overlay-paragraph(){
+    font-family: $font-family-slogan;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: $font-weight-brand;
+    letter-spacing: $letter-spacing-brand;
+    text-transform: capitalize;
+    color: white;
+}
+
+@mixin card-overlay-btn() {
+    width: 150px;
+    height: 40px;
+    color: $color-yellow;
+    background-color: #fff;
+    font-family: $font-family-slogan;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: $text-transform-uppercase;
+    letter-spacing: 1px;
+    border: 1px solid $color-yellow;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin copyright(){
+    font-family: $font-family-slogan;
+    font-size: 18px;
+    color:$color-primary;
+    letter-spacing: $letter-spacing-brand;
+    text-transform: capitalize;
+    font-weight: 100;
 }
